@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Ingredients from './Ingredients'
 import Steps from './Steps'
 
@@ -12,5 +13,10 @@ const Recipes = ({recipes, title}) =>
   			</div>
   		)}
   	</div>
+
+Recipes.propTypes = {
+	recipes: PropTypes.array.isRequired,
+	title: PropTypes.string.isRequired
+}
 
 export default Recipes

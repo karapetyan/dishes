@@ -1,4 +1,6 @@
-const Steps = steps =>
+import PropTypes from 'prop-types'
+
+const Steps = ({steps}) =>
     <div>
         <h3>Steps:</h3>
         <ul className="steps">
@@ -7,5 +9,9 @@ const Steps = steps =>
             )}
         </ul>
     </div>
+
+Steps.propTypes = {
+    steps: PropTypes.array.isRequired
+}
 
 export default Steps

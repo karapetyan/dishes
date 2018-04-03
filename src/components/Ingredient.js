@@ -1,10 +1,14 @@
-const Ingredient = ({name, amount, measurement}) => 
+import PropTypes from 'prop-types'
+
+const Ingredient = ({ingredient}) => 
   <li>
-    <span key={index} className="name">name: {name}</span>
-    <span key={index} className="amount">amount: {amount}</span>
-    <span key={index} className="measurement">measurement: {measurement}</span>
+    <span className="name">{ingredient.name}</span>
+    <span className="amount"> {ingredient.amount}</span>
+    <span className="measurement"> {ingredient.measurement}</span>
   </li>
 
-{/*add index argument*/}
+Ingredient.propTypes = {
+  ingredient: PropTypes.object.isRequired
+}
 
 export default Ingredient;

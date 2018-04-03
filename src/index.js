@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { render } from 'react-dom'
 import Recipes from './components/Recipes'

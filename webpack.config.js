@@ -4,6 +4,9 @@ module.exports = {
     filename: "bundle.js"
   }, 
   devtool: '#source-map',
+  devServer: {
+    contentBase: 'dist'
+  },
   module: {
     rules: [ 
       {
@@ -17,5 +20,6 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  mode: 'development'
 }
